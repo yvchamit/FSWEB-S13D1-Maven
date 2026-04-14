@@ -7,7 +7,7 @@ public class Main {
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
         if(isBarking){
-            if (clock < 8 || clock >= 20) {
+            if ((clock >= 0 && clock < 8)|| (clock >= 20 && clock <24)) {
                 return true;
             } else return false;
         }
